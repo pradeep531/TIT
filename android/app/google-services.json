@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "926683612182",
+    "project_id": "quickensolcrm",
+    "storage_bucket": "quickensolcrm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926683612182:android:d552cc1618ee17ca716137",
+        "android_client_info": {
+          "package_name": "com.quick.quickensolcrm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBglBX7-MvYEJDBdCvX0kwqwxeWd_rCdwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

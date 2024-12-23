@@ -1,0 +1,126 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"> <!-- Set padding here -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_bg"
+        android:padding="10dp">
+
+        <!-- Caller Name TextView -->
+        <TextView
+            android:id="@+id/callerName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Caller Name" 
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+           app:layout_constraintStart_toStartOf="parent" 
+            
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="start"
+             />
+
+        <!-- Close button -->
+        <!-- <ImageButton
+            android:id="@+id/closeButton"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@android:color/transparent"
+            android:tint="@android:color/white"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" /> -->
+
+ <TextView
+            android:id="@+id/askForSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Do you want to add call summary?" 
+            android:textSize="10sp"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toStartOf="parent" 
+            app:layout_constraintTop_toBottomOf="@id/callerName"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="start"
+             />
+
+        <!-- Summary EditText -->
+        <EditText
+            android:id="@+id/summaryEditText"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:hint="Enter call summary"
+            android:padding="12dp"
+            android:textColor="#448AFF" 
+            android:layout_marginTop="5dp"
+             android:layout_marginBottom="10dp"
+            app:layout_constraintTop_toBottomOf="@id/askForSummary"
+            android:background="@drawable/rounded_corner_button"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            
+             />
+
+        <!-- Submit Button -->
+      <LinearLayout
+        android:id="@+id/callerTimeInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2dp"
+        app:layout_constraintTop_toBottomOf="@id/summaryEditText"
+         app:layout_constraintEnd_toEndOf="parent"
+       >
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Submit"
+            android:textSize="12sp"
+            android:padding="2dp"
+            android:textColor="#448AFF"
+            
+             android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_corner_button"  
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/closeButton" 
+             />
+             <Button
+            android:id="@+id/reminderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Set Reminder"
+            android:textSize="12sp"
+            android:padding="2dp"
+           
+            android:textColor="#448AFF"
+            android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner_button"
+            />
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Close"
+            android:textSize="12sp"
+            android:padding="2dp"
+            android:textColor="#448AFF"
+            android:layout_marginTop="10dp"
+              android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corner_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

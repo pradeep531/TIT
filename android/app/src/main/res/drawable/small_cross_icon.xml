@@ -1,0 +1,7 @@
+<!-- res/drawable/small_calendar_icon.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:drawable="@drawable/close"
+        android:width="20dp"
+        android:height="20dp" />
+</layer-list>
